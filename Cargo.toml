@@ -148,3 +148,9 @@ harness = false
 [profile.release-with-debug]
 inherits = "release"
 debug = true
+
+[patch.crates-io]
+drm = { path = "../drm-rs"}
+drm-ffi = { path = "../drm-rs/drm-ffi" }
+drm-sys = { path = "../drm-rs/drm-ffi/drm-sys" }
+polling = { path = "../polling" }
